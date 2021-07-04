@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> website</title>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+	height: 130px;
+	border: solid 3px;
+	border-radius: 10px;
+	margin: 2px;
+}
+.header img{
+	width: 200px;
+	height: 100px;
+}
+.span1{
+	padding-left: 33%; 
+	padding-top: 4%;
+	align: center;
+	display: inline;
+	position: absolute;
+}
+.icon{
+	outline: none;
+	border: none;
+}
+.btn{
+	float: right;
+	margin-right: 3%;
+	margin-top: 4%;
+	border-radius: 20%;
+}
+.header input{
+	border-radius: 10%;
+	width: 300px;
+	padding-left: 10px;
+}
+.section2{
+	border: solid 3px;
+	border-radius: 10px;
+	margin: 4px;
+}
+.Banner {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+}
+
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.Banner img{
+	width: 50%;
+	height:300px ;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.img img{
+	display: inline;
+	width: 49%;
+	float: left;
+	border: solid 2px;
+	padding: 3px;
+	margin: 5px;
+	border-radius: 10px;
+}
+p{
+	margin: 10px;
+}
+.video{
+	border: solid 3px;
+	border-radius: 10px;
+	margin: 2px;
+	margin-top: 10%;
+	padding: 10px;
+}
+.video iframe{
+	width: 100%;
+	height: 400px;
+}
+.forms{
+	width: 99.5%;
+	height: 500px;
+	border: solid 3px;
+	border-radius: 3px;
+	margin: 5px;
+}
+.part1{
+	width: 49.75%;
+	height: 500px;
+	border: solid 3px;
+	border-radius: 0px;
+}
+.part1 h3{
+	padding-top: 10%;
+	text-align:  center;
+	padding-bottom: 4%;
+}
+.contactForm input{
+	display: block;
+	margin: 8px;
+	padding: 4px;
+	margin-left: 35%;
+}
+.contactForm input[type="textarea"]{
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 100px;
+	padding-right: 100px;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<img src="logo.png" alt="LOGO">
+		
+		
+			<span class="span1"><button class="icon"><i class="fa fa-search"></i></button>
+			<input type="text" placeholder="Search" name="search"></span>
+			<span class="login">
+			<button class="btn">Login</button></span>
+		</div>
+	</header>
+	<div class="section2">
+	<div class="Banner">
+		<div class="mySlides fade">
+ 	   		<div class="numbertext">1 / 5</div>
+ 	   		<img src="img1.JPG" style="height:300px ;width:100%">
+ 	   		<div class="text">Caption Text</div>
+ 		</div>
+
+ 		<div class="mySlides fade">
+    		<div class="numbertext">2 / 5</div>
+    		<img src="img2.JPG" style="width:100%">
+    		<div class="text">Caption Two</div>
+		</div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="img3.JPG" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade">
+ 	   		<div class="numbertext">4 / 5</div>
+ 	   		<img src="img4.png" style=" ;width:100%">
+ 	   		<div class="text">Caption Text</div>
+ 		</div>
+ 		<div class="mySlides fade">
+ 	   		<div class="numbertext">5 / 5</div>
+ 	   		<img src="img5.png" style=" ;width:100%">
+ 	   		<div class="text">Caption Text</div>
+ 		</div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+	<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+	</div>
+</div>
+
+<script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+			<div class="img">
+				<img src="image.JPG" alt="rock beach"  height="400px">
+			</div>
+			<span>
+			<p>Nature, in the broadest sense, is the natural, physical, material world or universe. "Nature" can refer to the phenomena of the physical world, and also to life in general. The study of nature is a large, if not the only, part of science. Although humans are part of nature, human activity is often understood as a separate category from other natural phenomena.The word nature is borrowed from the Old French nature and is derived from the Latin word natura, or "essential qualities, innate disposition", and in ancient times, literally meant "birth".In ancient philosophy, natura is mostly used as the Latin translation of the Greek word physis which originally related to the intrinsic characteristics that plants, animals, and other features of the world develop of their own accord.The concept of nature as a whole, the physical universe, is one of several expansions of the original notion, it began with certain core applications of the word φύσις by pre-Socratic philosophers (though this word had a dynamic dimension then, especially for Heraclitus), and has steadily gained currency ever since. During the advent of modern scientific method in the last several centuries, nature became the passive reality, organized and moved by divine laws. With the Industrial revolution, nature increasingly became seen as the part of reality deprived from intentional intervention: it was hence considered as sacred by some traditions (Rousseau, American transcendentalism) or a mere decorum for divine providence or human history (Hegel, Marx). However, a vitalist vision of nature, closer to the presocratic one, got reborn at the same time, especially after Charles Darwin.</p></span>
+			<div class="video">
+				<iframe  src="https://youtube.com/embed/linlz7-Pnvw"></iframe>
+			</div>
+			<div class="forms">
+				<div class="part1">
+					<h3>Contact Forms</h3>
+					<form class="contactForm">
+						<input type="text" id="name" placeholder="Name">
+						<input type="text" id=cname placeholder="Company Name">
+						<input type="email" id=email placeholder="Email">
+						<input type="numbertext" id="numb" placeholder="Phone Number">
+						<input type="textarea" id="descrip" placeholder="Description">
+						<input type="submit" onclick="formfunction();">
+					</form>
+				</div>
+				<div class="part2" id="parT2">
+					<span id="namE">Name:</span><span id="coname"></span><span id="Email"></span><span id="number"></span><span id="des"></span>
+				</div>
+			</div>
+		</body>
+</html>
